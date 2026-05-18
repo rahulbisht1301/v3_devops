@@ -46,7 +46,6 @@ pipeline {
         stage('Deploy with Docker Compose') {
             steps {
                 sh '''
-                    cd /var/jenkins_home/workspace/house-price-api
                     docker compose pull
                     docker compose up -d
                 '''
