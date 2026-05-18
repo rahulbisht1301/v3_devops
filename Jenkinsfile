@@ -46,7 +46,7 @@ pipeline {
         stage('Deploy with Docker Compose') {
             steps {
                 sh '''
-                    docker compose pull
+                    docker compose pull app prometheus grafana
                     docker compose up -d
                 '''
             }
