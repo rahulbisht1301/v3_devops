@@ -1,0 +1,71 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.local
+.env.*.local
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.DS_Store
+*.swp
+*.swo
+*~
+
+# Terraform
+terraform/.terraform/
+terraform/*.tfstate
+terraform/*.tfstate.*
+terraform/crash.log
+terraform/*.tfvars
+terraform/.terraform.lock.hcl
+
+# Docker / local runtime
+*.log
+app/static/*.tmp
+.dockerignore
+
+# Jenkins secrets (should never be committed)
+jenkins_home/
+.jenkins/
+secrets/
+credentials.xml
+config.xml
+
+# Local model/data files
+*.pkl
+*.joblib
+*.h5
+*.model
+*.csv
+data/
+models/
+
+# IDE/Editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.project
+.pydevproject
+
+# OS files
+Thumbs.db
+.vagrant/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Coverage reports
+.coverage
+htmlcov/
+.coverage.*
+
+# Git-related
+.git/
+.gitkeep
+
